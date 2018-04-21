@@ -1,8 +1,20 @@
 #mySQL syntax
 
-/* start the server on Mac */
+##############################  Getting started  ##############################  
+
+/* start MySQL server on Mac */
 #Click "Apple" Icon ⇒ System Preferences ⇒ MySQL ⇒ Start or Stop.
 
+/* start MySQL client on Mac */
+#go to right directory
+[~]$ cd /usr/local/mysql/bin
+
+#prompt for password
+./mysql -u root -p
+
+#should show: mysql>
+
+###############################################################################
 
 
 #create db
