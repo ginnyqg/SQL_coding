@@ -1,5 +1,10 @@
 #mySQL syntax
 
+/* start the server on Mac */
+#Click "Apple" Icon ⇒ System Preferences ⇒ MySQL ⇒ Start or Stop.
+
+
+
 #create db
 create database if not exists mydb;
 
