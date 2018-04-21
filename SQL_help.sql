@@ -49,6 +49,11 @@ IGNORE 1 LINES
 (id, date, store_nbr, item_nbr, unit_sales, onpromotion);
 
 
+/* change data type of a field 'unit_sales' to float of table 'train' */
+
+alter table train modify unit_sales float;
+
+
 #take a look of the *tbl*
 select * from mytable limit 10;
 
