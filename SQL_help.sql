@@ -39,8 +39,18 @@ describe mytable;
 #insert records into tbl
 insert into mytable values (007, 'ABC', 100);
 
+/* import from csv to table */
+
+LOAD DATA LOCAL INFILE '/Users/qinqingao/Desktop/Study/Kaggle/Groceries/train.csv'
+  INTO TABLE train 
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(id, date, store_nbr, item_nbr, unit_sales, onpromotion);
+
+
 #take a look of the *tbl*
-select * from mytable;
+select * from mytable limit 10;
 
 #update entries in tbl
 update mytable set cust_id = 101 where name = 'ABC';
