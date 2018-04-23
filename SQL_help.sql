@@ -104,5 +104,9 @@ rename table mytable to newTable;
 #rename column name in tbl
 alter table newTable change `amount` `address` varchar(50);
 
+#delete a table
+drop table tblname;
+
+
 #quit
 quit
