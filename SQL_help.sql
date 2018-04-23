@@ -30,6 +30,18 @@ drop table if exists mydb;
 #create tbl
 create table mytable (cust_id int, name varchar(50), amount float);
 
+create table train (
+	id int not null, 
+	date date, 
+	store_nbr int, 
+	item_nbr int, 
+	unit_sales float, 
+	onpromotion bool, 
+	primary key (id), 
+	foreign key (store_nbr) references stores (store_nbr), 
+	foreign key (item_nbr) references items (item_nbr));
+
+
 ### show tbl ###
 show tables;
 
@@ -71,6 +83,12 @@ alter table items add primary key (item_nbr);
 
 #modify table to add multiple columns as a primary key constraint
 alter table transactions add constraint date_store primary key (date, store_nbr);
+
+
+/**********************************    Foreign keys    ************************************/
+
+#modify table to add one column as a foreign key
+alter table train add foreign key (item_nbr) references items(item_nbr);
 
 
 
