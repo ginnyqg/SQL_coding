@@ -51,7 +51,27 @@ IGNORE 1 LINES
 
 /* change data type of a field 'unit_sales' to float of table 'train' */
 
+#modify data type
 alter table train modify unit_sales float;
+
+#modify column to specify not null
+alter table stores modify store_nbr int not null;
+
+
+/**********************************    Primary keys    ************************************/
+
+-- The PRIMARY KEY CONSTRAINT uniquely identifies each record in a database table.
+-- Primary keys must contain UNIQUE values, and cannot contain NULL values.
+-- A table can have only ONE primary key, which may consist of single or multiple fields.
+
+/******************************************************************************************/
+
+#modify table to add one column as a primary key
+alter table items add primary key (item_nbr);
+
+#modify table to add multiple columns as a primary key constraint
+alter table transactions add constraint date_store primary key (date, store_nbr);
+
 
 
 #take a look of the *tbl*
