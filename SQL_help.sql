@@ -130,3 +130,11 @@ select version();
 create table train_subset
 select * from train
 where train.date >= '2016-08-15';
+
+
+#export query result to csv on local
+#what's secure_file_priv?
+
+http://geodatawrangler.lazym8.com/blog/2017/02/16/secure-file-priv
+
+
