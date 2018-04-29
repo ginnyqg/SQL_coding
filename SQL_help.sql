@@ -110,3 +110,16 @@ drop table tblname;
 
 #quit
 quit
+
+
+
+
+
+#check mysql version
+select version();
+-- +-----------+
+-- | version() |
+-- +-----------+
+-- | 5.7.21    |
+-- +-----------+
+-- 1 row in set (0.00 sec)
