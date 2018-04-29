@@ -123,3 +123,10 @@ select version();
 -- | 5.7.21    |
 -- +-----------+
 -- 1 row in set (0.00 sec)
+
+
+#store query result to another table newly created
+
+create table train_subset
+select * from train
+where train.date >= '2016-08-15';
