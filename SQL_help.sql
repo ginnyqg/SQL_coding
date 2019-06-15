@@ -139,7 +139,8 @@ http://geodatawrangler.lazym8.com/blog/2017/02/16/secure-file-priv
 
 
 #offset
-Offset num_rows_to_skip
+order by col_A
+offset num_rows_to_skip
 
 
 
